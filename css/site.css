@@ -1,0 +1,84 @@
+/**
+ * General tag styles
+ */
+body {
+    color: #fff;
+    font-family: "Proxima Nova", "Helvetica Neue", sans-serif;
+    margin: 0;
+}
+
+/**
+ * Class specific styles
+ */
+.site-section {
+    height: 720px;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+.section-block {
+    margin-left: 5em;
+    width: 550px;
+}
+
+.section-title {
+    display: block;
+    font-size: 4em;
+}
+
+.section-text {
+    font-size: 1.5em;
+}
+
+.shadow-overlay {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/**
+ * ID specific styles
+ */
+#logo {
+    margin-left: 5em;
+    margin-top: 2em;
+}
+
+#play-url {
+    bottom: 2em;
+    right: 2em;
+    position: absolute;
+}
+
+#banner {
+    background-image: url(../img/LadiesForrest_1680x1050px.jpg);
+}
+
+#explanation {
+    background-color: #fff;
+}
+
+#explore {
+    background-color: teal;
+}
+
+#connect {
+    background-color: #fff;
+}
+
+#share {
+    background-image: url(../img/FirstAcces_1680X1050px.jpg);
+}
+
+#invite-signup {
+    background-color: teal;
+    height: 200px;
+}
+
+#site-footer {
+    background-color: #000;
+}
