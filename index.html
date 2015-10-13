@@ -13,6 +13,12 @@ share and explore ideas that matter
         <meta name="keywords" content="Vurze keywords" />
         <meta name="description" content="Vurze description" />
 
+        <!-- Some mobile viewport optimization -->
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <!-- Make things a tad bit prettier on mobile IE -->
+        <!--<meta http-equiv="cleartype" content="on" />-->
+
         <!-- Names and titles, can't live with them, can't live without -->
         <title>Vurze</title>
 
@@ -22,24 +28,24 @@ share and explore ideas that matter
     <body>
         <section class="site-section" id="banner">
             <div class="shadow-overlay"></div>
-            <img id="logo" src="img/LogoVurze_white.png" alt="Vurze" width="151" height="57" />
-            <div class="section-block">
-                <h2 class="section-title">Connect with<br />people who care</h2>
+            <img id="logo" src="img/LogoVurze_white.png" alt="Vurze" width="302" height="114" />
+            <div class="section-block" id="banner-block">
+                <h2 class="section-title">Connect with people who care</h2>
                 <p class="section-text">
                     Vurze is a social network for changemakers
                     that connects you with people like you, to
                     share and explore ideas that matter
                 </p>
-                <form method="POST" action="#">
+                <form method="POST" action="#" class="invite-form">
                     <label for="main-email-input">
-                        <img src="img/Icon_Email_Javalight.png" alt="Email" width="102" height="66" />
+                        <img class="email-label-image" src="img/Icon_Email_Javalight.png" alt="Email" width="102" height="66" />
                     </label>
-                    <input type="text" id="main-email-input" />
-                    <input type="submit" value="REQUEST" />
+                    <input type="text" class="invite-input" id="main-email-input" />
+                    <input type="submit" class="invite-submit" value="REQUEST" />
                 </form>
             </div>
             <a href="#" id="play-url">
-                <img src="img/GooglePlay_button_white.png" alt="Vurze on Google Play" width="183" height="61" />
+                <img id="play-image" src="img/GooglePlay_button_white.png" alt="Vurze on Google Play" width="183" height="61" />
             </a>
         </section>
         <section class="site-section" id="explanation">

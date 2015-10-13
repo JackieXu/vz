@@ -1,9 +1,22 @@
 /**
+ * Typography is important!
+ */
+@font-face {
+    font-family: 'ProximaNova-Light';
+    src: url(../fonts/proxima-nova-light.eot);
+    src: url(../fonts/proxima-nova-light.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/proxima-nova-light.woff) format('woff'),
+    url(../fonts/proxima-nova-light.ttf) format('truetype'),
+    url(../fonts/proxima-nova-light.svg#ywftsvg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/**
  * General tag styles
  */
 body {
     color: #fff;
-    font-family: "Proxima Nova", "Helvetica Neue", sans-serif;
+    font-family: "ProximaNova-Light", sans-serif;
     margin: 0;
 }
 
@@ -46,6 +59,7 @@ body {
 #logo {
     margin-left: 5em;
     margin-top: 2em;
+    z-index: 2;
 }
 
 #play-url {
@@ -81,4 +95,86 @@ body {
 
 #site-footer {
     background-color: #000;
+}
+
+@media (max-width: 920px) {
+    .site-section {
+        height: 645px;
+    }
+    .section-block {
+        margin-left: 1.5em;
+    }
+
+    .section-title {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+        width: 170px;
+    }
+
+    .section-text {
+        font-size: 1em;
+        margin-top: 0;
+        width: 230px;
+    }
+
+    .invite-form {
+        margin-top: 4em;
+        position: relative;
+        width: 80%;
+    }
+
+    .invite-input {
+        border: 0;
+        border-radius: 3px;
+        height: 3.5em;
+        padding: 0 2em;
+        width: 60%;
+    }
+
+    .invite-submit {
+        background-color: #00A499;
+        border: 0;
+        border-radius: 0 3px 3px 0;
+        color: #ffffff;
+        height: 100%;
+        position: absolute;
+        right: 100px;
+        width: 100px;
+    }
+
+    .email-label-image {
+        height: 17px;
+        left: 1em;
+        position: absolute;
+        top: 0.9em;
+        width: 26px;
+    }
+
+    #logo {
+        height: 46px;
+        margin-left: 1.5em;
+        margin-top: 1.5em;
+        width: 121px;
+    }
+
+    #banner {
+        background-position-x: 73%;
+        background-position-y: 100%;
+        background-size: 1176px 735px;
+    }
+
+    #banner-block {
+        margin-top: 8.5em;
+    }
+
+    #play-url {
+        height: 31px;
+        right: 1.5em;
+        top: 2em;
+    }
+
+    #play-image {
+        height: 31px;
+        width: 92px;
+    }
 }
