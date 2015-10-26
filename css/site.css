@@ -388,6 +388,10 @@ body {
     margin-top: 20px;
 }
 
+#main-heading {
+    font-size: 4em;
+}
+
 #facebook-icon {
     background-image: url(../img/Icon_Facebook_White.png);
     height: 41px;
