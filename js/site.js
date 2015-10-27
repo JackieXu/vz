@@ -19,11 +19,17 @@
         }, false);
     });
 
+    [].forEach.call(explanationCells, function (cell, index) {
+        cell.addEventListener('click', function () {
+
+        }, false);
+    });
+
     function renderScreens() {
         var currentCellBar = explanationCellBars[currentScreenIndex],
             width = parseInt(currentCellBar.style.width, 10) || 0;
 
-        width = (width + 10) % 100;
+        width = (width + 25) % 125;
 
         if (width === 0) {
             currentScreenIndex = (currentScreenIndex + 1) % 3;
