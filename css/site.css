@@ -49,10 +49,14 @@
 /**
  * General tag styles
  */
+html {
+    width: 100%;
+}
 body {
     color: #fff;
     font-family: "ProximaNova-Light", sans-serif;
     margin: 0;
+    width: 100%;
 }
 
 /**
@@ -455,4 +459,238 @@ body {
 
 #mail-icon:hover {
     background-image: url(../img/Icon_Email_Javalight.png);
+}
+
+.mobile-break {
+    display: none;
+}
+
+@media (max-width: 920px) and (orientation: portrait) {
+
+    .column {
+        width: 100%;
+    }
+
+    .site-section {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .section-block {
+        margin-left: 20px;
+    }
+
+    #main-heading {
+        font-size: 2em;
+    }
+
+    #phone-block {
+        height: 312px;
+        margin-left: 10px;
+        width: 172px;
+    }
+
+    #explanation {
+        height: 400px;
+    }
+
+    #explanation-block {
+        margin-left: -18px;
+        margin-top: 100px;
+    }
+
+    #explore-image {
+        animation: none;
+        height: 401px;
+        width: 160px;
+    }
+
+    .phone-image {
+        height: 312px;
+        width: 172px;
+    }
+
+    .explanation-cell {
+        height: 75px;
+        width: 210px;
+    }
+
+    .explanation-icon-container {
+        height: 70px;
+        width: 50px;
+    }
+
+    .explanation-icon {
+        height: 25px;
+        width: 25px;
+    }
+
+    .explanation-text {
+        font-size: 1em;
+        height: 70px;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+        margin-left: 0;
+        margin-bottom: 0.5em;
+        width: 170px;
+    }
+
+    .cute-little-bar {
+        margin-left: 0;
+        margin-top: 50px;
+        width: 60px;
+    }
+
+    .section-text {
+        font-size: 0.8em;
+        margin-left: 0;
+        margin-top: 0;
+        width: 230px;
+    }
+
+    #explore-image-container {
+        margin-right: 20px;
+        margin-top: 48px;
+    }
+
+    #explore .section-block {
+        width: 170px;
+    }
+
+    #explore .section-text {
+        width: 150px;
+    }
+
+    .invite-form.secondary {
+        margin-left: 20px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    #secondary-email-input {
+        padding-right: 46px;
+        width: 45%;
+    }
+
+    .invite-form {
+        margin-left: 0;
+        margin-top: 4em;
+        position: relative;
+        width: 80%;
+    }
+
+    .invite-label {
+        left: 0;
+        top: 5px;
+    }
+
+    .social-media-item {
+        margin: 0 5px;
+    }
+
+    .invite-input {
+        border: 0;
+        border-radius: 3px;
+        height: 3.5em;
+        padding: 0 6px 0 60px;
+        width: 60%;
+    }
+
+    .invite-submit.secondary {
+        right: 44px;
+    }
+
+    .secondary-heading {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .invite-submit {
+        background-color: #00A499;
+        border: 0;
+        border-radius: 0 3px 3px 0;
+        color: #ffffff;
+        height: 100%;
+        position: absolute;
+        right: 100px;
+        width: 100px;
+    }
+
+    #share {
+        background-position: 30% 60%;
+        background-size: 170%;
+    }
+
+    #invite-signup {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #invite-signup .section-block {
+        margin: 0;
+        width: 100%;
+    }
+
+    #connect {
+        display: none;
+    }
+
+    #social-media-list {
+        margin-top: 0;
+    }
+
+    .email-label-image {
+        height: 17px;
+        left: 1em;
+        position: absolute;
+        top: 0.9em;
+        width: 26px;
+    }
+
+    #site-footer {
+        height: 50px;
+    }
+
+    #vurze-footer-logo {
+        height: 29px;
+        margin-left: 20px;
+        margin-top: 12px;
+        width: 75px;
+    }
+
+    #logo {
+        height: 46px;
+        margin-left: 1.5em;
+        margin-top: 0.5em;
+        width: 121px;
+    }
+
+    #copyright-text {
+        line-height: 50px;
+    }
+
+    #banner {
+        background-position-x: 73%;
+        background-position-y: 100%;
+        background-size: 1176px 735px;
+    }
+
+    #banner-block {
+        margin-top: 8.5em;
+    }
+
+    #play-url {
+        height: 31px;
+        right: 1.5em;
+        top: 1em;
+    }
+
+    #play-image {
+        height: 31px;
+        width: 92px;
+    }
 }
