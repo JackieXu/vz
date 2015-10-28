@@ -367,6 +367,67 @@ body {
     background-size: cover;
 }
 
+#shadow-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#share-overlay {
+    background-color: #FFF;
+    border-radius: 3px;
+    display: none;
+    height: 390px;
+    left: 50%;
+    margin-left: -300px;
+    margin-top: -195px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 600px;
+    z-index: 2;
+}
+
+#share-overlay-title {
+    border-bottom: 1px solid #DEDEDE;
+    color: #00A499;
+    font-size: 2.4em;
+    margin: 0 20px;
+    padding: 30px 0;
+}
+
+#share-overlay-text {
+    color: #333;
+    font-size: 2em;
+}
+#facebook-share-button {
+    background-image: url(../img/Share_on_Facebook.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    height: 62px;
+    margin-left: 20px;
+    width: 272px;
+}
+#twitter-share-button {
+    background-image: url(../img/Share_on_Twitter.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: right;
+    margin-right: 20px;
+    height: 62px;
+    width: 272px;
+}
+.teal-text {
+    color: #00A499;
+    display: block;
+    font-size: 1.2em;
+    padding-bottom: 30px;
+}
+
 #teal-bar {
     background-color: #00A499;
 }

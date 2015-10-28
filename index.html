@@ -26,6 +26,21 @@ share and explore ideas that matter
         <link rel="stylesheet" type="text/css" href="css/site.css" />
     </head>
     <body>
+        <div id="share-overlay">
+            <h2 id="share-overlay-title">Thanks for signing up</h2>
+            <p id="share-overlay-text">
+                Know some others who might be<br />
+                interested in joining Vurze?
+            </p>
+            <span class="teal-text">Spread the word!</span>
+            <div id="share-buttons">
+                <a id="facebook-share-button" href="http://www.facebook.com/sharer/sharer.php?u=http://www.vurze.com&title=Vurze"></a>
+                <a id="twitter-share-button" href="http://twitter.com/intent/tweet?status=Just checked out Vurze, http://www.vurze.com, what an amazing platform to communicate!"></a>
+            </div>
+        </div>
+        <div id="shadow-overlay">
+
+        </div>
         <section class="site-section" id="banner">
             <div class="shadow-overlay"></div>
             <div class="column">
@@ -41,7 +56,7 @@ share and explore ideas that matter
                         <label for="main-email-input" class="invite-label">
                             <img class="email-label-image" src="img/Icon_envelop_Java.png" alt="Email" width="36" height="24" />
                         </label>
-                        <input type="text" class="invite-input" id="main-email-input" placeholder="Sign up for an invite" spellcheck="false" />
+                        <input type="text" name="email" class="invite-input" id="main-email-input" placeholder="Sign up for an invite" spellcheck="false" />
                         <input type="submit" class="invite-submit" value="REQUEST" />
                     </form>
                 </div>
@@ -110,19 +125,19 @@ share and explore ideas that matter
                 <div class="section-block left">
                     <div id="people">
                         <div class="people-row offset-left first">
-                            <img class="person-hex" src="img/Profile1.png" alt="Person 1" width="194" height="224" />
-                            <img class="person-hex" src="img/Profile2.png" alt="Person 1" width="194" height="224" />
-                            <img class="person-hex" src="img/Profile3.png" alt="Person 1" width="194" height="224" />
+                            <img class="person-hex" src="img/profile1.png" alt="Person 1" width="194" height="224" />
+                            <img class="person-hex" src="img/profile2.png" alt="Person 2" width="194" height="224" />
+                            <img class="person-hex" src="img/profile3.png" alt="Person 3" width="194" height="224" />
                         </div>
                         <div class="people-row">
-                            <img class="person-hex" src="img/Profile4.png" alt="Person 1" width="194" height="224" />
-                            <img class="person-hex" src="img/Profile5.png" alt="Person 1" width="194" height="224" />
-                            <img class="person-hex" src="img/Profile6.png" alt="Person 1" width="194" height="224" />
+                            <img class="person-hex" src="img/profile4.png" alt="Person 4" width="194" height="224" />
+                            <img class="person-hex" src="img/profile5.png" alt="Person 5" width="194" height="224" />
+                            <img class="person-hex" src="img/profile6.png" alt="Person 6" width="194" height="224" />
                         </div>
                         <div class="people-row offset-left last">
-                            <img class="person-hex" src="img/Profile7.png" alt="Person 1" width="194" height="224" />
-                            <img class="person-hex" src="img/Profile8.png" alt="Person 1" width="194" height="224" />
-                            <img class="person-hex" src="img/Profile9.png" alt="Person 1" width="194" height="224" />
+                            <img class="person-hex" src="img/profile7.png" alt="Person 7" width="194" height="224" />
+                            <img class="person-hex" src="img/profile8.png" alt="Person 8" width="194" height="224" />
+                            <img class="person-hex" src="img/profile9.png" alt="Person 9" width="194" height="224" />
                         </div>
                     </div>
                 </div>
@@ -161,7 +176,7 @@ share and explore ideas that matter
                         <label for="secondary-email-input" class="invite-label">
                             <img class="email-label-image" src="img/Icon_envelop_Java.png" alt="Email" width="36" height="24" />
                         </label>
-                        <input type="text" class="invite-input" id="secondary-email-input" placeholder="Sign up for an invite" spellcheck="false" />
+                        <input type="text" name="email" class="invite-input" id="secondary-email-input" placeholder="Sign up for an invite" spellcheck="false" />
                         <input type="submit" class="invite-submit secondary" value="REQUEST" />
                     </form>
                 </div>
