@@ -131,7 +131,7 @@ body {
 }
 
 .section-text {
-    font-size: 1.5em;
+    font-size: 20px;
     margin-left: 30px;
 }
 
@@ -165,7 +165,7 @@ body {
 
 .progress-bar {
     background-color: #fff;
-    height: 10px;
+    height: 5px;
     width: 100%;
 }
 
@@ -178,13 +178,13 @@ body {
 }
 
 .progress-bar-filled {
-    height: 10px;
+    height: 5px;
     transition: width 1s linear;
     width: 0;
 }
 
 .explanation-cell {
-    height: 150px;
+    height: 145px;
     overflow: auto;
     width: 420px;
 }
@@ -239,7 +239,7 @@ body {
 }
 
 .secondary-heading {
-    font-size: 2em;
+    font-size: 30px;
     margin-top: 60px;
     text-align: center;
 }
@@ -274,7 +274,7 @@ body {
 }
 
 .cute-little-bar {
-    background-color: #fff;
+    background-color: #489DDA;
     display: block;
     height: 5px;
     margin-left: 30px;
