@@ -747,8 +747,7 @@ body {
     }
 
     #banner {
-        background-position-x: 73%;
-        background-position-y: 100%;
+        background-position: 73% 100%;
         background-size: 1176px 735px;
     }
 
