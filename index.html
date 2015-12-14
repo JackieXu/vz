@@ -22,8 +22,17 @@ share and explore ideas that matter
         <!-- Names and titles, can't live with them, can't live without -->
         <title>Vurze</title>
 
-        <!-- They say beauty is only stylesheet deep -->
+        <!-- They say beauty is only stylesheets deep -->
+        <!--<link rel="stylesheet" type="text/css" href="css/plugins.css" />-->
         <link rel="stylesheet" type="text/css" href="css/site.css" />
+
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     </head>
     <body>
         <div id="share-overlay">
@@ -38,186 +47,185 @@ share and explore ideas that matter
                 <a id="twitter-share-button" href="http://twitter.com/intent/tweet?status=Just checked out Vurze, http://www.vurze.com, what an amazing platform to communicate!"></a>
             </div>
         </div>
-        <div id="shadow-overlay">
-
+        <div class="main">
+            <section class="site-section" id="banner">
+                <div class="column">
+                    <img id="logo" src="img/LogoVurze_white.png" alt="Vurze" width="151" height="57" />
+                    <div class="section-block" id="banner-block">
+                        <h2 class="section-title" id="main-heading">Connect<br class="mobile-break" /> with people<br class="mobile-break" /> who care</h2>
+                        <p class="section-text">
+                            Vurze is a social network for change-makers
+                            that connects you with people like you, to
+                            share and explore ideas that matter
+                        </p>
+                        <form method="POST" action="#" class="invite-form">
+                            <label for="main-email-input" class="invite-label">
+                                <img class="email-label-image" src="img/Icon_envelop_Java.png" alt="Email" width="36" height="24" />
+                            </label>
+                            <input type="text" name="email" class="invite-input" id="main-email-input" placeholder="Sign up for an invite" spellcheck="false" />
+                            <input type="submit" class="invite-submit" value="REQUEST" />
+                        </form>
+                    </div>
+                    <a href="#" id="play-url">
+                        <img id="play-image" src="img/GooglePlay_button_white.png" alt="Vurze on Google Play" width="183" height="61" />
+                    </a>
+                </div>
+            </section>
+            <section class="site-section" id="explanation">
+                <div class="column">
+                    <div id="phone-block">
+                        <img src="img/Nexus_front_explore.png" class="phone-image visible" alt="Exploration image" width="343" height="623" />
+                        <img src="img/Nexus_front_Connect.png" class="phone-image" alt="Connect image" width="343" height="623" />
+                        <img src="img/Nexus_front_Share.png" class="phone-image" alt="Share image" width="343" height="623" />
+                    </div>
+                    <div id="explanation-block">
+                        <div class="explanation-cell active">
+                            <div class="explanation-icon-container">
+                                <img class="explanation-icon" id="compass-icon" src="img/Icon_compass.png" alt="Exploration icon" width="49" height="49" />
+                            </div>
+                            <p class="explanation-text">Explore and discuss ideas<br />that matter to you</p>
+                            <div class="progress-bar active">
+                                <div id="teal-bar" class="progress-bar-filled" data-width="0"></div>
+                            </div>
+                        </div>
+                        <div class="explanation-cell">
+                            <div class="explanation-icon-container">
+                                <img class="explanation-icon" id="group-icon" src="img/Icon_group.png" alt="People icon" width="49" height="37" />
+                            </div>
+                            <p class="explanation-text">Connect with passionate<br />and interesting people</p>
+                            <div class="progress-bar">
+                                <div id="purple-bar" class="progress-bar-filled" data-width="0"></div>
+                            </div>
+                        </div>
+                        <div class="explanation-cell">
+                            <div class="explanation-icon-container">
+                                <img class="explanation-icon" id="world-icon" src="img/Icon_world.png" alt="World icon" width="51" height="51" />
+                            </div>
+                            <p class="explanation-text">Share your thoughts with<br />the world</p>
+                            <div class="progress-bar">
+                                <div id="blue-bar" class="progress-bar-filled" data-width="0"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="site-section" id="explore">
+                <div class="column">
+                    <div class="section-block left">
+                        <div class="cute-little-bar">&nbsp;</div>
+                        <h2 class="section-title">Explore and discuss ideas that matter to you</h2>
+                        <p class="section-text">
+                            Thinking of new ways to make impactful change?
+                            On Vurze you can explore the knowledge and insights
+                            of other change-makers, check out ways to help and
+                            upvote inspiring ideas.
+                        </p>
+                    </div>
+                    <div id="explore-image-container">
+                        <img id="explore-image" src="img/Screen_messages.jpg" alt="#" width="640" height="1604" />
+                    </div>
+                </div>
+            </section>
+            <section class="site-section" id="connect" style="height: 660px;">
+                <div class="column">
+                    <div class="section-block left">
+                        <div id="people">
+                            <div class="people-row offset-left first">
+                                <img class="person-hex" src="img/profile1.png" alt="Person 1" width="195" height="195" />
+                                <img class="person-hex" src="img/profile2.png" alt="Person 2" width="195" height="195" />
+                                <img class="person-hex" src="img/profile3.png" alt="Person 3" width="195" height="195" />
+                            </div>
+                            <div class="people-row">
+                                <img class="person-hex" src="img/profile4.png" alt="Person 4" width="195" height="195" />
+                                <img class="person-hex" src="img/profile5.png" alt="Person 5" width="195" height="195" />
+                                <img class="person-hex" src="img/profile6.png" alt="Person 6" width="195" height="195" />
+                            </div>
+                            <div class="people-row offset-left last">
+                                <img class="person-hex" src="img/profile7.png" alt="Person 7" width="195" height="195" />
+                                <img class="person-hex" src="img/profile8.png" alt="Person 8" width="195" height="195" />
+                                <img class="person-hex" src="img/profile9.png" alt="Person 9" width="195" height="195peo" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-block black right">
+                        <div class="cute-little-bar purple">&nbsp;</div>
+                        <h2 class="section-title" style="color: #4A4A4A;">Connect with passionate and interesting people</h2>
+                        <p class="section-text" style="color: #4A4A4A;">
+                            Connect with like-minded people and discuss
+                            issues that you find important. Vurze helps you find
+                            and connect with communities that share your
+                            values and passion.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="site-section" id="share">
+                <div class="shadow-overlay"></div>
+                <div class="column">
+                    <div class="section-block">
+                        <div class="cute-little-bar" style="background-color: #489DDA;">&nbsp;</div>
+                        <h2 class="section-title">Share<br /> your thoughts<br /> with the world</h2>
+                        <p class="section-text">
+                            Share your thoughts with a socially
+                            conscious group of change-makers. Bounce
+                            ideas between each other and learn from
+                            others how they make change in this world.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="invite-signup">
+                <div class="column">
+                    <div class="section-block left">
+                        <h3 class="secondary-heading">Sign up for an invite</h3>
+                        <form method="POST" action="#" class="invite-form secondary">
+                            <label for="secondary-email-input" class="invite-label">
+                                <img class="email-label-image" src="img/Icon_envelop_Java.png" alt="Email" width="36" height="24" />
+                            </label>
+                            <input type="text" name="email" class="invite-input" id="secondary-email-input" placeholder="Sign up for an invite" spellcheck="false" />
+                            <input type="submit" class="invite-submit secondary" value="REQUEST" />
+                        </form>
+                    </div>
+                    <div class="section-block right">
+                        <h3 class="secondary-heading">Say hi, get in touch</h3>
+                        <ul id="social-media-list">
+                            <li class="social-media-item">
+                                <a class="contact-icon-link" href="http://facebook.com/vurze">
+                                    <span class="contact-icon" id="facebook-icon"></span>
+                                </a>
+                            </li>
+                            <li class="social-media-item">
+                                <a class="contact-icon-link" href="http://twitter.com/vurzeapp">
+                                    <span class="contact-icon" id="twitter-icon"></span>
+                                </a>
+                            </li>
+                            <li class="social-media-item">
+                                <a class="contact-icon-link" href="http://instagram.com/vurze">
+                                    <span class="contact-icon" id="instagram-icon"></span>
+                                </a>
+                            </li>
+                            <li class="social-media-item">
+                                <a class="contact-icon-link" href="mailto:info@vurze.com">
+                                    <span class="contact-icon" id="mail-icon"></span>
+                                </a>
+                            </li>
+                            <li class="social-media-item">
+                                <a class="contact-icon-link" href="https://goo.gl/maps/R94vT8MvVCJ2">
+                                    <span class="contact-icon" id="maps-icon"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </div>
-        <section class="site-section" id="banner">
-            <div class="shadow-overlay"></div>
-            <div class="column">
-                <img id="logo" src="img/LogoVurze_white.png" alt="Vurze" width="151" height="57" />
-                <div class="section-block" id="banner-block">
-                    <h2 class="section-title" id="main-heading">Connect<br class="mobile-break" /> with people<br class="mobile-break" /> who care</h2>
-                    <p class="section-text">
-                        Vurze is a social network for change-makers
-                        that connects you with people like you, to
-                        share and explore ideas that matter
-                    </p>
-                    <form method="POST" action="#" class="invite-form">
-                        <label for="main-email-input" class="invite-label">
-                            <img class="email-label-image" src="img/Icon_envelop_Java.png" alt="Email" width="36" height="24" />
-                        </label>
-                        <input type="text" name="email" class="invite-input" id="main-email-input" placeholder="Sign up for an invite" spellcheck="false" />
-                        <input type="submit" class="invite-submit" value="REQUEST" />
-                    </form>
-                </div>
-                <a href="#" id="play-url">
-                    <img id="play-image" src="img/GooglePlay_button_white.png" alt="Vurze on Google Play" width="183" height="61" />
-                </a>
-            </div>
-        </section>
-        <section class="site-section" id="explanation">
-            <div class="column">
-                <div id="phone-block">
-                    <img src="img/Nexus_front_explore.png" class="phone-image visible" alt="Exploration image" width="343" height="623" />
-                    <img src="img/Nexus_front_Connect.png" class="phone-image" alt="Connect image" width="343" height="623" />
-                    <img src="img/Nexus_front_Share.png" class="phone-image" alt="Share image" width="343" height="623" />
-                </div>
-                <div id="explanation-block">
-                    <div class="explanation-cell active">
-                        <div class="explanation-icon-container">
-                            <img class="explanation-icon" id="compass-icon" src="img/Icon_compass.png" alt="Exploration icon" width="49" height="49" />
-                        </div>
-                        <p class="explanation-text">Explore and discuss ideas that matter to you</p>
-                        <div class="progress-bar active">
-                            <div id="teal-bar" class="progress-bar-filled" data-width="0"></div>
-                        </div>
-                    </div>
-                    <div class="explanation-cell">
-                        <div class="explanation-icon-container">
-                            <img class="explanation-icon" id="group-icon" src="img/Icon_group.png" alt="People icon" width="49" height="37" />
-                        </div>
-                        <p class="explanation-text">Connect with passionate and interesting people</p>
-                        <div class="progress-bar">
-                            <div id="purple-bar" class="progress-bar-filled" data-width="0"></div>
-                        </div>
-                    </div>
-                    <div class="explanation-cell">
-                        <div class="explanation-icon-container">
-                            <img class="explanation-icon" id="world-icon" src="img/Icon_world.png" alt="World icon" width="51" height="51" />
-                        </div>
-                        <p class="explanation-text">Share your thoughts with the world</p>
-                        <div class="progress-bar">
-                            <div id="blue-bar" class="progress-bar-filled" data-width="0"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="site-section" id="explore">
-            <div class="column">
-                <div class="section-block left">
-                    <div class="cute-little-bar">&nbsp;</div>
-                    <h2 class="section-title">Explore and discuss ideas that matter to you</h2>
-                    <p class="section-text">
-                        Thinking of new ways to make impactful change?
-                        On Vurze you can explore the knowledge and insights
-                        of other change-makers, check out ways to help and
-                        upvote inspiring ideas.
-                    </p>
-                </div>
-                <div id="explore-image-container">
-                    <img id="explore-image" src="img/Screen_messages.jpg" alt="#" width="640" height="1604" />
-                </div>
-            </div>
-        </section>
-        <section class="site-section" id="connect" style="height: 660px;">
-            <div class="column">
-                <div class="section-block left">
-                    <div id="people">
-                        <div class="people-row offset-left first">
-                            <img class="person-hex" src="img/profile1.png" alt="Person 1" width="194" height="224" />
-                            <img class="person-hex" src="img/profile2.png" alt="Person 2" width="194" height="224" />
-                            <img class="person-hex" src="img/profile3.png" alt="Person 3" width="194" height="224" />
-                        </div>
-                        <div class="people-row">
-                            <img class="person-hex" src="img/profile4.png" alt="Person 4" width="194" height="224" />
-                            <img class="person-hex" src="img/profile5.png" alt="Person 5" width="194" height="224" />
-                            <img class="person-hex" src="img/profile6.png" alt="Person 6" width="194" height="224" />
-                        </div>
-                        <div class="people-row offset-left last">
-                            <img class="person-hex" src="img/profile7.png" alt="Person 7" width="194" height="224" />
-                            <img class="person-hex" src="img/profile8.png" alt="Person 8" width="194" height="224" />
-                            <img class="person-hex" src="img/profile9.png" alt="Person 9" width="194" height="224" />
-                        </div>
-                    </div>
-                </div>
-                <div class="section-block black right">
-                    <div class="cute-little-bar purple">&nbsp;</div>
-                    <h2 class="section-title" style="color: #4A4A4A;">Connect with passionate and interesting people</h2>
-                    <p class="section-text" style="color: #4A4A4A;">
-                        Connect with like-minded people and discuss
-                        issues that you find important. Vurze helps you find
-                        and connect with communities that share your
-                        values and passion.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="site-section" id="share">
-            <div class="shadow-overlay"></div>
-            <div class="column">
-                <div class="section-block">
-                    <div class="cute-little-bar">&nbsp;</div>
-                    <h2 class="section-title">Share<br /> your thoughts<br /> with the world</h2>
-                    <p class="section-text">
-                        Share your thought with a socially
-                        conscious group of change-makers. Bounce
-                        ideas between each other and learn from
-                        others how they make change in this world.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section id="invite-signup">
-            <div class="column">
-                <div class="section-block left">
-                    <h3 class="secondary-heading">Sign up for an invite</h3>
-                    <form method="POST" action="#" class="invite-form secondary">
-                        <label for="secondary-email-input" class="invite-label">
-                            <img class="email-label-image" src="img/Icon_envelop_Java.png" alt="Email" width="36" height="24" />
-                        </label>
-                        <input type="text" name="email" class="invite-input" id="secondary-email-input" placeholder="Sign up for an invite" spellcheck="false" />
-                        <input type="submit" class="invite-submit secondary" value="REQUEST" />
-                    </form>
-                </div>
-                <div class="section-block right">
-                    <h3 class="secondary-heading">Say hi, get in touch</h3>
-                    <ul id="social-media-list">
-                        <li class="social-media-item">
-                            <a class="contact-icon-link" href="http://facebook.com/vurze">
-                                <span class="contact-icon" id="facebook-icon"></span>
-                            </a>
-                        </li>
-                        <li class="social-media-item">
-                            <a class="contact-icon-link" href="http://twitter.com/vurzeapp">
-                                <span class="contact-icon" id="twitter-icon"></span>
-                            </a>
-                        </li>
-                        <li class="social-media-item">
-                            <a class="contact-icon-link" href="http://instagram.com/vurze">
-                                <span class="contact-icon" id="instagram-icon"></span>
-                            </a>
-                        </li>
-                        <li class="social-media-item">
-                            <a class="contact-icon-link" href="mailto:info@vurze.com">
-                                <span class="contact-icon" id="mail-icon"></span>
-                            </a>
-                        </li>
-                        <li class="social-media-item">
-                            <a class="contact-icon-link" href="https://goo.gl/maps/R94vT8MvVCJ2">
-                                <span class="contact-icon" id="maps-icon"></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
         <footer id="site-footer">
             <div class="column">
                 <img id="vurze-footer-logo" src="img/LogoVurze_white.png" alt="Vurze" width="151" height="57" />
                 <span id="copyright-text">MIWI &copy; 2015. All rights reserved. <a href="privacy">Privacy Policy</a> & <a href="terms-and-conditions">Terms of Use</a></span>
             </div>
         </footer>
+        <!--<script src="js/plugins.js"></script>-->
         <script src="js/site.js"></script>
         <script src=”//platform.twitter.com/oct.js” type=”text/javascript"></script>
         <script type="text/javascript">twttr.conversion.trackPid('ntp46', { tw_sale_amount: 0, tw_order_quantity: 0 });</script>
