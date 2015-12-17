@@ -8,10 +8,12 @@
         explanationCellBars = document.querySelectorAll('.progress-bar-filled'),
         currentScreenIndex = 0,
         shareOverlay = document.querySelector('#share-overlay'),
+        shadowOverlay = document.querySelector('#shadow-overlay'),
         timer;
 
     document.querySelector('html').addEventListener('click', function () {
         shareOverlay.style.display = 'none';
+        shadowOverlay.style.display = 'none';
     });
 
     shareOverlay.addEventListener('click', function (event) {
@@ -27,6 +29,7 @@
             xhr.open('POST', 'http://av3.miwi.com/mailing-list/bcf991ea80', true);
             xhr.addEventListener('load', function () {
                 shareOverlay.style.display = 'block';
+                shadowOverlay.style.display = 'block';
             });
             xhr.send(new FormData(this));
 
