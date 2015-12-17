@@ -8,12 +8,10 @@
         explanationCellBars = document.querySelectorAll('.progress-bar-filled'),
         currentScreenIndex = 0,
         shareOverlay = document.querySelector('#share-overlay'),
-        shadowOverlay = document.querySelector('#shadow-overlay'),
         timer;
 
     document.querySelector('html').addEventListener('click', function () {
         shareOverlay.style.display = 'none';
-        shadowOverlay.style.display = 'none';
     });
 
     shareOverlay.addEventListener('click', function (event) {
@@ -29,7 +27,6 @@
             xhr.open('POST', 'http://av3.miwi.com/mailing-list/bcf991ea80', true);
             xhr.addEventListener('load', function () {
                 shareOverlay.style.display = 'block';
-                shadowOverlay.style.display = 'block';
             });
             xhr.send(new FormData(this));
 
@@ -93,16 +90,11 @@
 
     renderScreens();
 
-    onePageScroll(".main", {
-        sectionContainer: "section",
-        easing: "ease",
-        animationTime: 1000,
-        pagination: true,
-        updateURL: false,
-        beforeMove: function(index) {},
-        afterMove: function(index) {},
-        loop: false,
-        keyboard: true,
-        responsiveFallback: false
-    });
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 0) {
+            document.querySelector('#header').classList.toggle('black', true);
+        } else {
+            document.querySelector('#header').classList.remove('black');
+        }
+    }, false);
 }());
