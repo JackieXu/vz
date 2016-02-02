@@ -2,27 +2,15 @@
  * Typography is important!
  */
 @font-face {
-    font-family: 'ProximaNova-Light';
-    src: url(../fonts/proxima-nova-light.eot);
-    src: url(../fonts/proxima-nova-light.eot?#iefix) format('embedded-opentype'),
-    url(../fonts/proxima-nova-light.woff) format('woff'),
-    url(../fonts/proxima-nova-light.ttf) format('truetype'),
-    url(../fonts/proxima-nova-light.svg#ywftsvg) format('svg');
+    font-family: 'ProximaNova-Regular';
+    src: url(../fonts/proxima-nova-regular.eot);
+    src: url(../fonts/proxima-nova-regular.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/proxima-nova-regular.woff2) format('woff2'),
+    url(../fonts/proxima-nova-regular.woff) format('woff'),
+    url(../fonts/proxima-nova-regular.ttf) format('truetype'),
+    url(../fonts/proxima-nova-regular.svg#youworkforthem) format('svg');
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'proxima_nova_ththin';
-    src: url('../fonts/proxima_nova_thin-webfont.eot');
-    src: url('../fonts/proxima_nova_thin-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/proxima_nova_thin-webfont.woff2') format('woff2'),
-    url('../fonts/proxima_nova_thin-webfont.woff') format('woff'),
-    url('../fonts/proxima_nova_thin-webfont.ttf') format('truetype'),
-    url('../fonts/proxima_nova_thin-webfont.svg#proxima_nova_ththin') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
 }
 
 /**
@@ -67,7 +55,7 @@ html {
 }
 body {
     color: #fff;
-    font-family: "ProximaNova-Light", sans-serif;
+    font-family: "ProximaNova-Regular", sans-serif;
     margin: 0;
     width: 100%;
 }
@@ -146,7 +134,7 @@ body {
 
 .section-title {
     display: block;
-    font-family: 'proxima_nova_ththin', sans-serif;
+    font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 3em;
     margin-left: 30px;
 }
@@ -260,7 +248,7 @@ body {
     -webkit-appearance: none;
     border: 0;
     border-radius: 5px;
-    font-family: "ProximaNova-Light", sans-serif;
+    font-family: "ProximaNova-Regular", sans-serif;
     font-size: 16px;
     height: 50px;
     outline: 0;
@@ -300,7 +288,25 @@ body {
     background-color: #8E288C;
     margin-left: 230px;
 }
-
+.download-button {
+    background-color: #00A499;
+    border-radius: 3px;
+    color: #FFFFFF;
+    display: block;
+    font-family: ProximaNova-Regular, sans-serif;
+    font-size: 22px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    width: 300px;
+}
+.download-button.inverted {
+    background-color: #FFFFFF;
+    color: #00A499;
+    margin: 110px auto;
+    position: relative;
+}
 /**
  * ID specific styles
  */
@@ -420,7 +426,7 @@ body {
 #share-overlay-title {
     border-bottom: 1px solid #DEDEDE;
     color: #00A499;
-    font-family: 'proxima_nova_ththin', sans-serif;
+    font-family: 'ProximaNova-Regular', sans-serif;
     font-size: 2.4em;
     margin: 0 20px;
     padding: 30px 0;
@@ -503,7 +509,8 @@ body {
 }
 
 #main-heading {
-    font-size: 4em;
+    font-size: 64px;
+    font-weight: normal;
 }
 
 #facebook-icon {
