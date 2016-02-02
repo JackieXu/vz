@@ -141,7 +141,8 @@ body {
 
 .section-text {
     font-size: 20px;
-    margin-left: 30px;
+    line-height: 30px;
+    margin: 0 0 0 30px;
 }
 
 .contact-icon {
@@ -322,7 +323,10 @@ body {
     background-color: #000;
     transition: background-color 0.2s linear;
 }
-
+#banner-block {
+    padding-top: 100px;
+    text-align: center;
+}
 #logo {
     margin-left: 30px;
     margin-top: 13px;
@@ -511,6 +515,8 @@ body {
 #main-heading {
     font-size: 64px;
     font-weight: normal;
+    line-height: 70px;
+    margin: 50px 0;
 }
 
 #facebook-icon {
@@ -580,11 +586,15 @@ body {
     }
 
     .section-block {
-        margin-left: 20px;
+        margin: 0;
     }
 
     #main-heading {
         font-size: 2em;
+        line-height: 1.1;
+        margin: 200px 0 0 0;
+        padding: 0;
+        width: 100%;
     }
 
     #phone-block {
@@ -635,22 +645,21 @@ body {
 
     .section-title {
         font-size: 1.5em;
-        margin-left: 0;
+        margin-left: 20px;
         margin-bottom: 0.5em;
         width: 170px;
     }
 
     .cute-little-bar {
-        margin-left: 0;
+        margin-left: 20px;
         margin-top: 50px;
         width: 60px;
     }
 
     .section-text {
-        font-size: 0.8em;
-        margin-left: 0;
-        margin-top: 0;
-        width: 230px;
+        font-size: 1em;
+        line-height: 1;
+        margin: 20px;
     }
 
     #explore-image-container {
@@ -732,7 +741,7 @@ body {
 
     #invite-signup {
         height: auto;
-        padding: 20px 0;
+        padding: 0;
     }
 
     #invite-signup .section-block {
@@ -769,8 +778,7 @@ body {
 
     #logo {
         height: 46px;
-        margin-left: 1.5em;
-        margin-top: 0.5em;
+        margin: 17px;
         width: 121px;
     }
 
@@ -784,17 +792,31 @@ body {
     }
 
     #banner-block {
-        margin-top: 8.5em;
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .mobile-break {
+        display: block;
     }
 
     #play-url {
         height: 31px;
-        right: 1.5em;
-        top: 1em;
+        right: 17px;
+        top: 25px;
     }
 
     #play-image {
         height: 31px;
         width: 92px;
+    }
+    .section-block {
+        width: 100%;
+    }
+    .download-button.inverted {
+        margin: 50px auto;
+    }
+    #social-media-block {
+        margin-bottom: 50px !important;
     }
 }
